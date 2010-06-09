@@ -1,5 +1,6 @@
 jQuery(function ($)
   {
+    // TODO Use :heading, http://github.com/jeresig/sizzle/issues#issue/16
     $(':header')
       .each(function ()
         {
