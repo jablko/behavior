@@ -7,6 +7,7 @@ jQuery(function ($)
           for (var level = 1; level <= this.tagName.slice(-1); level++)
           {
             selector.push('h' + level);
+            selector.push(':has(h' + level + ')');
           }
 
           $(this).nextUntil(selector.join(', '))
